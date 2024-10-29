@@ -1,0 +1,12 @@
+CREATE TABLE compte (email text,mdp text,actif text,totpsecret text,totpcode text, digestavatar text);
+CREATE UNIQUE INDEX comptex ON compte (email(100));
+CREATE TABLE photo (compte text,album text,digest text,horodatage datetime,public text);
+CREATE UNIQUE INDEX photox ON photo (compte(100),album(100),digest(100));
+CREATE TABLE album (compte text,nom text,public text,horodatage datetime);
+CREATE UNIQUE INDEX albumx ON album (compte(100),nom(100));
+CREATE TABLE suivi (follower text,followed text);
+CREATE UNIQUE INDEX suivix ON suivi (follower(100),followed(100));
+CREATE TABLE blacklist (blacklister text,blacklisted text);
+CREATE UNIQUE INDEX blacklistx ON blacklist (blacklister(100),blacklisted(100));
+CREATE TABLE aime (compte text,owner text,album text,photodigest text);
+CREATE UNIQUE INDEX aimex ON aime (compte(100),owner(100),album(100),photodigest(100));

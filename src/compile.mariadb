@@ -1,0 +1,55 @@
+gcc reflex_newprofile.c -o reflex_newprofile.cgi -lmariadbclient
+cp reflex_newprofile.cgi /usr/lib/cgi-bin/
+gcc reflex_checktotp.c -o reflex_checktotp.cgi -lmariadbclient
+cp reflex_checktotp.cgi /usr/lib/cgi-bin/
+gcc reflex_main.c -o reflex_main.cgi -lmariadbclient
+cp reflex_main.cgi /usr/lib/cgi-bin/
+gcc reflex_albums.c -o reflex_albums.cgi -lmariadbclient
+cp reflex_albums.cgi /usr/lib/cgi-bin/
+gcc reflex_addalbum.c -o reflex_addalbum.cgi -lmariadbclient
+cp reflex_addalbum.cgi /usr/lib/cgi-bin/
+gcc reflex_doaddalbum.c -o reflex_doaddalbum.cgi -lmariadbclient
+cp reflex_doaddalbum.cgi /usr/lib/cgi-bin/
+gcc reflex_album.c -o reflex_album.cgi -lmariadbclient
+cp reflex_album.cgi /usr/lib/cgi-bin/
+gcc reflex_addphoto.c -o reflex_addphoto.cgi -lmariadbclient
+cp reflex_addphoto.cgi /usr/lib/cgi-bin/
+gcc reflex_upload.c -o reflex_upload.cgi -lmariadbclient
+cp reflex_upload.cgi /usr/lib/cgi-bin/
+gcc reflex_editalbum.c -o reflex_editalbum.cgi -lmariadbclient
+cp reflex_editalbum.cgi /usr/lib/cgi-bin/
+gcc reflex_deletealbum.c -o reflex_deletealbum.cgi -lmariadbclient
+cp reflex_deletealbum.cgi /usr/lib/cgi-bin/
+gcc reflex_doeditalbum.c -o reflex_doeditalbum.cgi -lmariadbclient
+cp reflex_doeditalbum.cgi /usr/lib/cgi-bin/
+gcc reflex_doeditalbum2.c -o reflex_doeditalbum2.cgi -lmariadbclient
+cp reflex_doeditalbum2.cgi /usr/lib/cgi-bin/
+gcc reflex_dodeletealbum.c -o reflex_dodeletealbum.cgi -lmariadbclient
+cp reflex_dodeletealbum.cgi /usr/lib/cgi-bin/
+gcc reflex_view.c -o reflex_view.cgi -lmariadbclient
+cp reflex_view.cgi /usr/lib/cgi-bin/
+gcc reflex_deletephoto.c -o reflex_deletephoto.cgi -lmariadbclient
+cp reflex_deletephoto.cgi /usr/lib/cgi-bin/
+gcc reflex_dodeletephoto.c -o reflex_dodeletephoto.cgi -lmariadbclient
+cp reflex_dodeletephoto.cgi /usr/lib/cgi-bin/
+gcc reflex_jaime.c -o reflex_jaime.cgi -lmariadbclient
+cp reflex_jaime.cgi /usr/lib/cgi-bin/
+gcc reflex_suivre.c -o reflex_suivre.cgi -lmariadbclient
+cp reflex_suivre.cgi /usr/lib/cgi-bin/
+gcc reflex_social.c -o reflex_social.cgi -lmariadbclient
+cp reflex_social.cgi /usr/lib/cgi-bin/
+gcc reflex_blacklister.c -o reflex_blacklister.cgi -lmariadbclient
+cp reflex_blacklister.cgi /usr/lib/cgi-bin/
+gcc reflex_param.c -o reflex_param.cgi -lmariadbclient
+cp reflex_param.cgi /usr/lib/cgi-bin/
+gcc reflex_updatepassword.c -o reflex_updatepassword.cgi -lmariadbclient
+cp reflex_updatepassword.cgi /usr/lib/cgi-bin/
+gcc reflex_uploadavatar.c -o reflex_uploadavatar.cgi -lmariadbclient
+cp reflex_uploadavatar.cgi /usr/lib/cgi-bin/
+gcc reflex_douploadavatar.c -o reflex_douploadavatar.cgi -lmariadbclient
+cp reflex_douploadavatar.cgi /usr/lib/cgi-bin/
+gcc reflex_active2fa.c -o reflex_active2fa.cgi -lmariadbclient
+cp reflex_active2fa.cgi /usr/lib/cgi-bin/
+gcc reflex_desactive2fa.c -o reflex_desactive2fa.cgi -lmariadbclient
+cp reflex_desactive2fa.cgi /usr/lib/cgi-bin/
+rm *.cgi

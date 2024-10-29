@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Reflex</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="manifest" href="manifest.json" />
+<link rel="icon" type="image/x-icon" href="/reflex/reflex.png">
+<link rel="stylesheet" href="/reflex/themes/reflex.min.css" />
+<link rel="stylesheet" href="/reflex/themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="/jq/jquery.mobile.structure-1.4.5.min.css" />
+<script src="/jq/demos/js/jquery.min.js"></script>
+<script src="/jq/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+   <div data-role="page" data-theme="b">
+      <div data-role="header" data-theme="b">
+      </div>
+      <div role="main" class="ui-content" data-theme="b">
+         <p style="text-align:center"><strong>Connexion</strong></p>
+         <form autocomplete="off" action="/cgi-bin/reflex_checktotp.cgi" method="post" id="form" data-transition="none" data-rel="dialog">
+            <div data-role="fieldcontain">
+               <label for="txt-email">Adresse email</label>
+               <input type="text" name="txt-email" id="txt-email" value="">
+            </div>
+            <div data-role="fieldcontain">
+               <label for="txt-password">Mot de passe</label>
+               <input type="password" name="txt-password" id="txt-password" value="">
+            </div>
+            <button type="submit" data-mini="false" data-inline="false" data-theme="c" data-icon="action">Connexion</button>
+         </form>
+         <p style="text-align:center"><strong>Pas encore abonné ?</strong></p>
+         <a href="reflex_newprofile.html" class="ui-btn ui-btn-d ui-corner-all mc-top-margin-1-5">Créer un compte</a>
+      </div>
+      <div data-role="footer" class="ui-bar" data-position="fixed" data-theme="b">
+         <h4>Reflex - Partage de photos (v1.0)</h4>
+      </div>
+   </div>
+</body>
+</html>
