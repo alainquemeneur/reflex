@@ -66,3 +66,5 @@ cd /home/votre_repertoire/reflex/src
 rm * (vérifiez bien d'être dans le bon répertoire avant de taper cela !!!)
 
 Connectez-vous à https://votre_serveur/reflex et utilisez la webapp
+
+alain.quemeneur@gmail.com
