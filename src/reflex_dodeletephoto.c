@@ -124,6 +124,8 @@ else
          		db_clear_result(result);
          		sprintf(reponse,"%s/%s/%s",STORAGE_DIR,nom,digest);
          		unlink(reponse);
+         		sprintf(reponse,"%s/%s/%s.jpg",STORAGE_DIR,nom,digest);
+         		unlink(reponse);
          		strcpy(reponse,"La photo a été supprimée");
 					}				
 				db_close(handler);

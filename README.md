@@ -10,6 +10,8 @@ J'ai programmé ce logiciel pour répondre à mes besoins.
 
 Techniquement, il s'agit d'une webapp installable n'importe quel OS (Windows, Linux, Mac, iOS, Android), mais prévue pour fonctionner surtout sous iOS ou Android. Le front end est programmé en HTML 5 + toolkit javascript JQuery Mobile. Le back end est constitué de scripts CGI écrits en langage C, traitant les données en interface avec une base de données MySQL ou MariaDB.
 
+Ce programme ne peut fonctionner sans qrencode (pour la génération des QR codes 2FA), ni convert (pour la génération des miniatures)
+
 <strong><u>Installation</u></strong>
 
 Sur un serveur Linux, installer NginX, activer le https sur votre domaine, et <a href="https://techexpert.tips/nginx/nginx-shell-script-cgi/">activez les scripts CGI</a> sur votre serveur NginX
@@ -50,6 +52,7 @@ cd /home/votre_repertoire/reflex/src
 Renseigner le mot de passe MySQL que vous avez choisi dans password.h
 
 Il faut maintenant compiler les scripts CGI :
+sudo apt install libmysqlclient-dev imagemagick-6.q16
 cd /home/votre_repertoire/reflex/src
 sudo mkdir /usr/lib/cg-bin
 chmod a+x compile*

@@ -271,6 +271,8 @@ else
 					buffer[i-start]=0;
                     sprintf(query,"mv \'%s/%s/%s\' \'%s/%s/%s\'",storage_dir,nom,nomfic,storage_dir,nom,buffer);
 					system(query);
+					sprintf(query,"/usr/bin/convert \'%s/%s/%s\' -resize 1000x \'%s/%s/%s.jpg\'",storage_dir,nom,buffer,storage_dir,nom,buffer);
+					system(query);
 					sprintf(query,"select public from album where compte=\'%s\' and nom=\'%s\';",nom,album);
 					db_query(handler,query);
 					if(db_ntuples(result)==1)

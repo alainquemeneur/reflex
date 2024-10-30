@@ -315,7 +315,7 @@ if(success==1)
       	<input type=\"hidden\" name=\"txt-album\" id=\"txt-album\" value=\"%s\">\n\
       	<input type=\"hidden\" name=\"txt-digest\" id=\"txt-digest\" value=\"%s\">\n\
       	<input type=\"hidden\" name=\"txt-owner\" id=\"txt-owner\" value=\"%s\">\n\
-			<input type=\"image\" name=\"%s\" value=\"%s\" src=\"%s\" style=\"max-width:100%%; display: block;\" loading=\"lazy\">\n\
+			<input type=\"image\" name=\"%s\" value=\"%s\" src=\"%s.jpg\" style=\"max-width:100%%; display: block;\" loading=\"lazy\">\n\
 			</form>\n\
 			<br>\n\
 			<img src=\"/reflex/heart.png\" style=\"vertical-align:middle;\"> <strong>%d</strong>\n\
